@@ -1,6 +1,6 @@
 # Welcome to Taiwo Joshua's GitHub Repository
 
-![Header Image](./public/logo512.png)
+![Header Image](./public/logo192.png)
 
 ## About Me
 
