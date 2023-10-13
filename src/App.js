@@ -129,7 +129,7 @@ export default class App extends React.Component{
   
     return (
       <div className="app">
-        <span className='move'><a href='#home' className="fa-solid fa-chevrons-up"> </a><a href='#footer' id='moveDown' className="fa-solid fa-chevrons-down"> </a></span>
+        <span className='move'><a href='#home' className="fa-solid fa-chevrons-up"> </a><a href='#footer' className="fa-solid fa-chevrons-down"> </a></span>
         <input type="checkbox" id="showNav" style={{display: "none"}} />
         <label htmlFor="showNav" id="menu"><FaBars /></label>
         <Navbar />
