@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaEnvelope, FaFacebook, FaInstagram, FaLinkedin, FaMedium, FaPhone, FaWhatsapp, FaX } from 'react-icons/fa6';
+import { FaEnvelope, FaFacebook, FaInstagram, FaLinkedin, FaPhone, FaWhatsapp, FaX } from 'react-icons/fa6';
 
 export default class Footer extends React.Component{
   render(){
