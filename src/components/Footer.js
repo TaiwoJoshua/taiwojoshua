@@ -6,7 +6,7 @@ export default class Footer extends React.Component{
     return (
       <section id="footer" className="footer animate__animated animate__slower">
         <div className="social-Icon">
-            <a rel="noreferrer" href="https://medium.com/@joshuataiwo07" target="_blank"><FaMedium /></a>
+            {/* <a rel="noreferrer" href="https://medium.com/@joshuataiwo07" target="_blank"><FaMedium /></a> */}
             <a rel="noreferrer" href="https://www.facebook.com/joshuataiwo07" target="_blank"><FaFacebook /></a>
             <a rel="noreferrer" href="https://twitter.com/t__jay07?t=ja8QSHhFMcqDuKay2zQrnA&s=09" target="_blank"><FaX /></a>
             <a rel="noreferrer" href="https://www.linkedin.com/in/taiwo-joshua-olamilekan-02b42520a/" target="_blank"><FaLinkedin /></a>
