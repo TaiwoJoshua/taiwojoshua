@@ -31,7 +31,7 @@ export default class Certificate extends React.Component{
             </a>
           </button>
           <button>
-            <a id="verify" data-fancybox={certificate.title} href={require("../images/Certificates/" + certificate.verify)}>
+            <a id="verify" className="view-link" data-fancybox={certificate.title} href={require("../images/Certificates/" + certificate.verify)}>
               Scan QR
             </a>
           </button>
