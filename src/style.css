@@ -222,14 +222,8 @@ html{
 .full{
     font-size: 1.8rem;
     text-align: right;
-    /* animation: blinking 1s infinite; */
-    /* border-right: 2px solid white; */
     height: 35px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-@keyframes blinking {
-    from { border-color: transparent }
-    to { border-color: white; }
 }
 .main>div{
     position: relative;
