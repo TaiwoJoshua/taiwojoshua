@@ -43,25 +43,25 @@ const projects = [
     },
     {
         title: "To-Do List",
-        link: "https://taiwojoshua.github.io/todolist",
+        link: "https://teejay-todolist.netlify.app/",
         folder: "ToDoList",
         images: ["index.png", "empty.png", "add.png", "created.png", "checked.png", "completed.png", "darkMode.png", "darkEmpty.png"]
     },
     {
         title: "Notes",
-        link: "https://taiwojoshua.github.io/notes",
+        link: "https://teejay-notes.netlify.app/",
         folder: "Notes",
         images: ["index.png", "empty.png", "new note.png", "text.png", "preview.png"]
     },
     {
         title: "Quizzical",
-        link: "https://taiwojoshua.github.io/teejay-quizzical/",
+        link: "https://teejayquizzical.netlify.app/",
         folder: "Quizzical",
         images: ["index.png", "second.png", "last.png"]
     },
     {
         title: "Tenzies",
-        link: "https://taiwojoshua.github.io/tenzies/",
+        link: "https://teejaytenzies.netlify.app/",
         folder: "Tenzies",
         images: ["index.png", "selected.png", "first roll.png", "completed.png", "new time.png"]
     },
