@@ -50,7 +50,7 @@ export default function App(){
       setTimeout(() => {
         document.querySelector(`.move.left`).classList.remove("show");
         document.querySelector(`.move.right`).classList.remove("show");
-      }, 2000);
+      }, 3000);
     }
 
 

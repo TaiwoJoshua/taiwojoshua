@@ -28,9 +28,6 @@ export default function Portfolio({ direction }){
   };
 
   return (
-    // <section id="portfolio">
-    //   <Content />
-    // </section>
     <MotionComponent tag={"section"} id={"portfolio"} content={<Content />} direction={ direction } />
   );
 }
