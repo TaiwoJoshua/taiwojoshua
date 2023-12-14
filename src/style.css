@@ -276,8 +276,10 @@ html{
 }
 #pic img{
     width: 200px;
-    height: 200px;
-    border-radius: 50%;
+    /* height: 200px; */
+    border-radius: 10px;
+    padding: 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 #intro{
     display: flex;

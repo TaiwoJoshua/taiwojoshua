@@ -27,13 +27,15 @@ const projects = [
         title: "RUNACES Dues",
         link: "https://runacesdues.com/",
         folder: "RUNACES Dues",
-        images: ["index.jpg", "found.jpg", "rdownload.jpg", "receipt.png", "incomplete.jpg", "notfound.jpg", "401a.jpg", "admin.jpg", "wrongp.jpg", "successp.jpg", "signedin.jpg", "options.jpg", "add.jpg", "update.jpg", "upadate2.jpg", "remove.jpg", "confirmRemove.jpg", "wrongk.jpg", "correctk.jpg", "stats.jpg", "leveldownloada.jpg", "download.jpg", "record.png", "logout.jpg"]
+        images: ["index.jpg", "found.jpg", "rdownload.jpg", "receipt.png", "incomplete.jpg", "notfound.jpg", "401a.jpg"]
+        // images: ["index.jpg", "found.jpg", "rdownload.jpg", "receipt.png", "incomplete.jpg", "notfound.jpg", "401a.jpg", "admin.jpg", "wrongp.jpg", "successp.jpg", "signedin.jpg", "options.jpg", "add.jpg", "update.jpg", "upadate2.jpg", "remove.jpg", "confirmRemove.jpg", "wrongk.jpg", "correctk.jpg", "stats.jpg", "leveldownloada.jpg", "download.jpg", "record.png", "logout.jpg"]
     },
     {
         title: "RUNMESA Dues",
         link: "https://runmesadues.com/",
         folder: "RUNMESA Dues",
-        images: ["index.jpg", "found.jpg", "rdownload.jpg", "receipt.jpg", "found.jpg", "sent.jpg", "unable.jpg", "incomplete.jpg", "notfound.jpg", "401.jpg", "admin.jpg", "wrongp.jpg", "successp.jpg", "options.jpg", "add.jpg", "update.jpg", "updater.jpg", "remove.jpg", "confirmremove.jpg", "wrongk.jpg", "correctk.jpg", "stats.jpg", "leveldownload.jpg", "download.jpg", "record.jpg", "logout.jpg", "dindex.jpg", "dstatus.jpg", "doptions.jpg", "1stCourse.jpg", "1stCourseStat.jpg", "2ndCourse.jpg", "2ndCourseStat.jpg", "dstats.jpg", "ddownload.jpg", "dlogout.jpg"]
+        images: ["index.jpg", "found.jpg", "rdownload.jpg", "receipt.jpg", "found.jpg", "sent.jpg", "unable.jpg", "incomplete.jpg", "notfound.jpg", "401.jpg"]
+        // images: ["index.jpg", "found.jpg", "rdownload.jpg", "receipt.jpg", "found.jpg", "sent.jpg", "unable.jpg", "incomplete.jpg", "notfound.jpg", "401.jpg", "admin.jpg", "wrongp.jpg", "successp.jpg", "options.jpg", "add.jpg", "update.jpg", "updater.jpg", "remove.jpg", "confirmremove.jpg", "wrongk.jpg", "correctk.jpg", "stats.jpg", "leveldownload.jpg", "download.jpg", "record.jpg", "logout.jpg", "dindex.jpg", "dstatus.jpg", "doptions.jpg", "1stCourse.jpg", "1stCourseStat.jpg", "2ndCourse.jpg", "2ndCourseStat.jpg", "dstats.jpg", "ddownload.jpg", "dlogout.jpg"]
     },
     {
         title: "Automatic Time-Table Generator",
