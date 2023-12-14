@@ -4,7 +4,7 @@ import { FaSpinner } from 'react-icons/fa6';
 import emailjs from '@emailjs/browser';
 import MotionComponent from './MotionComponent';
 
-const Contact = () => {
+const Contact = ({ direction }) => {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [status, setStatus] = useState({ status: "", type: "", message: "" });
   const [sending, setSending] = useState(false);
@@ -64,7 +64,7 @@ const Contact = () => {
   };
 
   return (
-    <MotionComponent tag={"section"} id="contact" direction="left" content={<Content />} />
+    <MotionComponent tag={"section"} id="contact" direction={ direction } content={<Content />} />
   );
 };
 
