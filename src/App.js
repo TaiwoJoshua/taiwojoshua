@@ -11,6 +11,47 @@ import Footer from './components/Footer';
 import { FaBars, FaChevronDown, FaChevronUp } from 'react-icons/fa6';
 
 export default function App(){
+  React.useEffect(() => {
+    function setMove(navoption){
+      const sections = ["#home", "#about", "#portfolio", "#skills", "#certificate", "#services", "#contact"];
+      navoption = navoption.href.slice(navoption.href.indexOf("#"));
+      const currSection = sections.indexOf(navoption);
+      const prevSection = currSection !== 0 ? currSection - 1 : 0;
+      const nextSection = currSection !== sections.length - 1 ? currSection + 1 : sections.length - 1;
+      document.getElementById("moveUp").href = sections[prevSection];
+      document.getElementById("moveDown").href = sections[nextSection];
+    }
+    
+    function observe(child, sectionId) {
+      const section = document.getElementById(sectionId);
+      const navoption = document.querySelector(`#navbar ul li:nth-child(${child}) a`);
+      const elementOffset = section.getBoundingClientRect().top;
+      const distance = elementOffset;
+      const height = parseFloat(getComputedStyle(section).height) - 61;
+      if (distance < 61 && distance > -height) {
+        navoption.classList.add("active");
+        setMove(navoption);
+      } else {
+        navoption.classList.remove("active");
+      }
+    }
+
+    function allObserve(){
+      observe("1", "home");
+      observe("2", "about");
+      observe("3", "portfolio");
+      observe("4", "skills");
+      observe("5", "certificate");
+      observe("6", "services");
+      observe("7", "contact");
+    }
+    
+    window.addEventListener('scroll', allObserve);
+    return () => {
+        window.removeEventListener('scroll', allObserve);
+    }
+  }, []);
+
   return (
     <div className="app">
       <span className='move'><a href='#home' className="fa-solid fa-chevrons-up"> </a><a href='#footer' className="fa-solid fa-chevrons-down"> </a></span>
