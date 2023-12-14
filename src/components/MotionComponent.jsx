@@ -22,7 +22,7 @@ export default function MotionComponent({ tag = "div", id = "", className = "", 
             ref={ref}
             animate={controls}
             initial="hidden"
-            variants={motionVariants}
+            // variants={motionVariants}
             id={id}
             className={className}
         >
