@@ -26,9 +26,8 @@
 html{
     scroll-behavior: smooth;
 }
-body{
-    max-width: 100vw;
-    overflow-x: hidden;
+.app{
+    overflow: hidden;
 }
 .pagewrapper{
     width: 100%;
@@ -72,9 +71,23 @@ body{
     cursor: default;
 }
 
-.move:nth-child(1){
+.move.left{
     right: initial;
+    left: -50px;
+    transition: left 0.5s ease-in-out;
+}
+
+.move.left.show{
     left: 10px;
+}
+
+.move.right{
+    left: initial;
+    right: -50px;
+}
+
+.move.right.show{
+    right: 10px;
 }
 
 .move a{
@@ -558,7 +571,7 @@ body{
 section:not(.footer, #home){
     padding-bottom: 50px !important;
 }
-section:nth-child(odd){
+section:nth-child(even){
     background-color: black;
 }
 .visible{

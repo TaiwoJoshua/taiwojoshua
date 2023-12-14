@@ -44,17 +44,26 @@ export default function App(){
       observe("5", "certificate");
       observe("6", "services");
       observe("7", "contact");
+
+      document.querySelector(`.move.left`).classList.add("show");
+      document.querySelector(`.move.right`).classList.add("show");
+      setTimeout(() => {
+        document.querySelector(`.move.left`).classList.remove("show");
+        document.querySelector(`.move.right`).classList.remove("show");
+      }, 2000);
     }
-    
+
+
     window.addEventListener('scroll', allObserve);
     return () => {
-        window.removeEventListener('scroll', allObserve);
+      window.removeEventListener('scroll', allObserve);
     }
   }, []);
 
   return (
     <div className="app">
-      <span className='move'><a href='#home' className="fa-solid fa-chevrons-up"> </a><a href='#footer' className="fa-solid fa-chevrons-down"> </a></span>
+      <span className='move left'><a href='#home' className="fa-solid fa-chevrons-up"> </a><a href='#footer' className="fa-solid fa-chevrons-down"> </a></span>
+      <span className='move right'><a href='#home' id='moveUp'><FaChevronUp /></a><a href='#about' id='moveDown'><FaChevronDown /></a></span>
       <input type="checkbox" id="showNav" style={{display: "none"}} />
       <label htmlFor="showNav" id="menu"><FaBars /></label>
       <Navbar />
@@ -66,7 +75,6 @@ export default function App(){
       <Services direction="left" />
       <Contact direction="right" />
       <Footer direction="left" />
-      <span className='move'><a href='#home' id='moveUp'><FaChevronUp /></a><a href='#about' id='moveDown'><FaChevronDown /></a></span>
     </div>
   );
 }
