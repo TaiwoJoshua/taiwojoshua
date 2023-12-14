@@ -561,9 +561,6 @@ section:not(.footer, #home){
 section:nth-child(odd){
     background-color: black;
 }
-.animate__animated{
-    visibility: hidden;
-}
 .visible{
     visibility: visible;
 }

@@ -2,8 +2,9 @@ import React from 'react';
 import { nanoid } from 'nanoid';
 import allCertificates from './Data/certificates';
 import Fancybox from './Fancybox';
+import MotionComponent from './MotionComponent';
 
-const Certificate = () => {
+const Certificate = ({ direction }) => {
   const certificateElements = allCertificates.map(certificate => {
     return certificate.verify ? (
       <div key={nanoid()} className="ver">
@@ -28,13 +29,19 @@ const Certificate = () => {
     );
   });
 
+  const Content = () => { 
+    return (
+      <>
+        <h1 className="headings">CERTIFICATES</h1>
+        <div className="gallery">
+          <Fancybox>{certificateElements}</Fancybox>
+        </div>
+      </>
+    );
+  };
+
   return (
-    <section id="certificate" className="animate__animated animate__slower">
-      <h1 className="headings">CERTIFICATES</h1>
-      <div className="gallery">
-        <Fancybox>{certificateElements}</Fancybox>
-      </div>
-    </section>
+    <MotionComponent tag={"section"} id={"certificate"} content={<Content />} direction={ direction } />
   );
 };
 
