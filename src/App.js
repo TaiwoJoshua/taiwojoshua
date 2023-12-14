@@ -11,6 +11,8 @@ import Footer from './components/Footer';
 import { FaBars, FaChevronDown, FaChevronUp } from 'react-icons/fa6';
 
 export default function App(){
+  const timeoutRef = React.useRef(null);  
+
   React.useEffect(() => {
     function setMove(navoption){
       const sections = ["#home", "#about", "#portfolio", "#skills", "#certificate", "#services", "#contact"];
@@ -37,6 +39,10 @@ export default function App(){
     }
 
     function allObserve(){
+      if(timeoutRef.current){
+        clearTimeout(timeoutRef.current);
+      }
+
       observe("1", "home");
       observe("2", "about");
       observe("3", "portfolio");
@@ -47,16 +53,19 @@ export default function App(){
 
       document.querySelector(`.move.left`).classList.add("show");
       document.querySelector(`.move.right`).classList.add("show");
-      setTimeout(() => {
+      timeoutRef.current = setTimeout(() => {
         document.querySelector(`.move.left`).classList.remove("show");
         document.querySelector(`.move.right`).classList.remove("show");
       }, 3000);
     }
 
-
     window.addEventListener('scroll', allObserve);
     return () => {
       window.removeEventListener('scroll', allObserve);
+
+      if(timeoutRef.current){
+        clearTimeout(timeoutRef.current);
+      }
     }
   }, []);
 
