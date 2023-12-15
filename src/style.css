@@ -318,6 +318,9 @@ html{
     width: 360px;
     height: 240px;
     margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    padding: 2px;
 }
 
 .view-link{
@@ -400,6 +403,9 @@ html{
 .ver img{
     width: 360px;
     height: 240px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    padding: 2px;
 }
 .ver_wrapper{
     width: 360px;
