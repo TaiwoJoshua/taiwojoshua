@@ -2,7 +2,7 @@ import React from 'react';
 import image from '../images/photo_2022-03-28_15-31-27.jpg';
 import MotionComponent from './MotionComponent';
 
-const About = ({ direction }) => {
+const About = () => {
   const Content = () => { 
     return (
       <>
@@ -43,7 +43,7 @@ const About = ({ direction }) => {
   };
 
   return (
-    <MotionComponent tag={"section"} id={"about"} content={<Content />} direction={ direction } />
+    <MotionComponent tag={"section"} id={"about"} content={<Content />} />
   );
 };
 

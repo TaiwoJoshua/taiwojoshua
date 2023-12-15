@@ -4,7 +4,7 @@ import allCertificates from './Data/certificates';
 import Fancybox from './Fancybox';
 import MotionComponent from './MotionComponent';
 
-const Certificate = ({ direction }) => {
+const Certificate = () => {
   const certificateElements = allCertificates.map(certificate => {
     return certificate.verify ? (
       <div key={nanoid()} className="ver">
@@ -41,7 +41,7 @@ const Certificate = ({ direction }) => {
   };
 
   return (
-    <MotionComponent tag={"section"} id={"certificate"} content={<Content />} direction={ direction } />
+    <MotionComponent tag={"section"} id={"certificate"} content={<Content />} />
   );
 };
 

@@ -77,13 +77,13 @@ export default function App(){
       <label htmlFor="showNav" id="menu"><FaBars /></label>
       <Navbar />
       <Home />
-      <About direction="left" />
-      <Portfolio direction="right" />
-      <Skills direction="left" />
-      <Certificate direction="right" />
-      <Services direction="left" />
-      <Contact direction="right" />
-      <Footer direction="left" />
+      <About />
+      <Portfolio />
+      <Skills />
+      <Certificate />
+      <Services />
+      <Contact />
+      <Footer />
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import { FaEnvelope, FaFacebook, FaInstagram, FaLinkedin, FaPhone, FaWhatsapp, FaX } from 'react-icons/fa6';
 import MotionComponent from './MotionComponent';
 
-export default function Footer({ direction }){
+export default function Footer(){
   const Content = () => { 
     return (
       <>
@@ -21,6 +21,6 @@ export default function Footer({ direction }){
   };
 
   return (
-    <MotionComponent tag={"section"} className={"footer"} id={"footer"} content={<Content />} direction={ direction } />
+    <MotionComponent tag={"section"} className={"footer"} id={"footer"} content={<Content />} />
   );
 }

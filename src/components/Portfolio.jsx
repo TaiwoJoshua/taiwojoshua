@@ -4,7 +4,7 @@ import {nanoid} from 'nanoid';
 import Fancybox from './Fancybox';
 import MotionComponent from './MotionComponent';
 
-export default function Portfolio({ direction }){
+export default function Portfolio(){
   const portfolioElements = projects.map(project => {
     const images = project.images.map(image => <a key={nanoid()} href={require(`../images/${project.folder}/${image}`)} data-fancybox={project.title}> </a>);
     images.shift();
@@ -28,6 +28,6 @@ export default function Portfolio({ direction }){
   };
 
   return (
-    <MotionComponent tag={"section"} id={"portfolio"} content={<Content />} direction={ direction } />
+    <MotionComponent tag={"section"} id={"portfolio"} content={<Content />} />
   );
 }

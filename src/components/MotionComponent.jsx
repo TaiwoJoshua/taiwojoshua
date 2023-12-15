@@ -2,10 +2,11 @@ import { motion, useAnimation } from 'framer-motion';
 import React from 'react'
 import { useInView } from 'react-intersection-observer';
 
-export default function MotionComponent({ tag = "div", id = "", className = "", content, direction = "left" }) {
+export default function MotionComponent({ tag = "div", id = "", className = "", content = <h1>No Content Provided</h1> }) {
+    const rand = Math.floor(Math.random() * 10);
     const motionVariants = {
-        visible: { opacity: 1, x: 0, transition: { duration: 1 } },
-        hidden: { opacity: 0, x: direction === "left" ? "100%" : "-100%" }
+        visible: { opacity: 1, x: 0, transition: { duration: 1, delay: 0.5 } },
+        hidden: { opacity: 0, x: rand > 5 ? "100%" : 0 }
     };
     const controls = useAnimation();
     const [ref, inView] = useInView();
