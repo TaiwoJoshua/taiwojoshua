@@ -1,13 +1,19 @@
 const projects = [
     {
         title: "TeeJay Gallery",
-        link: "#",
+        link: "",
         folder: "TJ Gallery",
         images: ["welcome.JPG", "index.png", "animal.png", "food.png", "buildings.png", "business.png", "cars.png", "fashion.png", "nature.png", "sport.png", "tech.png", "wallpaper.png"]
     },
     {
+        title: "RCCG - Lily of the Valley",
+        link: "https://rccg-lilyofthevalley.netlify.app/",
+        folder: "RCCG Lily",
+        images: ["index.png", "1.png", "2.png", "3.png", "4.png", "5.png", "6.png", "7.png", "8.png", "9.png", "10.png", "11.png", "12.png", "13.png"]
+    },
+    {
         title: "RUN Engineering Time-Table",
-        link: "#",
+        link: "",
         folder: "Engineering Time-Table",
         images: ["index.jpg", "loading.png", "notification.jpg", "front.jpg", "announce.png", "table.png", "course.png", "picture edit.jpg", "announcement edit.png", "table edit.png", "course edit.png"]
     },
@@ -19,7 +25,7 @@ const projects = [
     },
     {
         title: "Chapel Dues Record",
-        link: "#",
+        link: "",
         folder: "Chapel Dues Record",
         images: ["index.jpg", "found.jpg", "notfoud.jpg", "admin.jpg", "wrongp.jpg", "successp.jpg", "loading.png", "add.jpg", "remove.jpg", "confirmremove.jpg", "stats.jpg", "download.jpg", "record.png", "logout.jpg", "loggingout.png"]
     },
@@ -39,7 +45,8 @@ const projects = [
     },
     {
         title: "Automatic Time-Table Generator",
-        link: "https://tj-automatic-timetable-generator.netlify.app/",
+        link: "",
+        // link: "https://tj-automatic-timetable-generator.netlify.app/",
         folder: "Automatic Time_Table Generator",
         images: ["index.png", "inputs.png", "periods.png", "loading.png", "timetable.png"]
     },

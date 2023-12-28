@@ -9,7 +9,7 @@ export default function Portfolio(){
     const images = project.images.map(image => <a key={nanoid()} href={require(`../images/${project.folder}/${image}`)} data-fancybox={project.title}> </a>);
     images.shift();
 
-    return <div className="ver" key={nanoid()}><img src={require(`../images/${project.folder}/${project.images[0]}`)} alt={project.title} title={project.title} /><div className="ver_wrapper"><button><a className="view-link" data-fancybox={project.title} href={require(`../images/${project.folder}/${project.images[0]}`)}>View</a>{images}</button><button><a href={project.link} rel='noreferrer' className="view-link" target="_blank">Visit</a></button></div></div>
+    return <div className="ver" key={nanoid()}><img src={require(`../images/${project.folder}/${project.images[0]}`)} alt={project.title} title={project.title} /><div className="ver_wrapper"><button><a className="view-link" data-fancybox={project.title} href={require(`../images/${project.folder}/${project.images[0]}`)}>View</a>{images}</button>{project.link !== "" && <button><a href={project.link} rel='noreferrer' className="view-link" target="_blank">Visit</a></button>}</div></div>
   });
 
   const Content = () => { 
