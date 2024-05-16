@@ -1,9 +1,9 @@
 const projects = [
     {
-        title: "TeeJay Gallery",
-        link: "",
-        folder: "TJ Gallery",
-        images: ["welcome.JPG", "index.png", "animal.png", "food.png", "buildings.png", "business.png", "cars.png", "fashion.png", "nature.png", "sport.png", "tech.png", "wallpaper.png"]
+        title: "RUC Training Unit",
+        link: "https://ructrainingunit.com.ng/",
+        folder: "RUC-Training-Unit",
+        images: ["index.png", "1.png", "2.png", "3.png", "4.png", "5.png", "6.png", "7.png", "8.png", "9.png", "10.png"]
     },
     {
         title: "RCCG - Lily of the Valley",
@@ -16,6 +16,12 @@ const projects = [
         link: "",
         folder: "Engineering Time-Table",
         images: ["index.jpg", "loading.png", "notification.jpg", "front.jpg", "announce.png", "table.png", "course.png", "picture edit.jpg", "announcement edit.png", "table edit.png", "course edit.png"]
+    },
+    {
+        title: "TeeJay Gallery",
+        link: "",
+        folder: "TJ Gallery",
+        images: ["welcome.JPG", "index.png", "animal.png", "food.png", "buildings.png", "business.png", "cars.png", "fashion.png", "nature.png", "sport.png", "tech.png", "wallpaper.png"]
     },
     {
         title: "RUC Bible Study Attendance",
