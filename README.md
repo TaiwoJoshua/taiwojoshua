@@ -14,21 +14,6 @@ Here's what you can expect from this repository:
 
 Feel free to explore my work and get in touch if you're interested in collaborating or if you have any questions.
 
-## Projects
-
-### Project 1: [Project Name]
-
-- Description: A brief description of the project, its purpose, and the technologies used.
-- [Link to the project repository]
-- [Link to the live demo, if available]
-
-### Project 2: [Project Name]
-
-- Description: A brief description of the project, its purpose, and the technologies used.
-- [Link to the project repository]
-- [Link to the live demo, if available]
-
-(You can list additional projects with similar details as needed.)
 
 ## Technologies
 
@@ -52,6 +37,7 @@ I am proficient in a variety of web development technologies, including but not 
 - Email: joshuataiwo07@gmail.com
 - LinkedIn: https://www.linkedin.com/in/taiwo-joshua-olamilekan-02b42520a/
 - Portfolio: https://taiwojoshua.netlify.app/
+- WhatsApp: +2348103182378
 
 Feel free to reach out to me if you'd like to collaborate, have questions about my projects, or need assistance with web development.
 
