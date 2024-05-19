@@ -190,6 +190,22 @@ body, #root, .app{
     box-shadow: 0 0 10px rgba(242, 242, 242, 0.8);
 }
 
+.nav-close{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    pointer-events: none;
+}
+
+#showNav:checked ~ .nav-close{
+    pointer-events: initial;
+}
+
 #showNav:checked ~ #navbar{
     right: 0;
 }
@@ -580,8 +596,11 @@ body, #root, .app{
 section:not(.footer, #home){
     padding-bottom: 50px !important;
 }
-section:nth-child(even){
+section{
     background-color: black;
+}
+section:nth-child(even){
+    background-color: white;
 }
 .visible{
     visibility: visible;

@@ -75,6 +75,7 @@ export default function App(){
       <span className='move right'><a href='#home' id='moveUp'><FaChevronUp /></a><a href='#about' id='moveDown'><FaChevronDown /></a></span>
       <input type="checkbox" id="showNav" style={{display: "none"}} />
       <label htmlFor="showNav" id="menu"><FaBars /></label>
+      <label className="nav-close" htmlFor="showNav"></label>
       <Navbar />
       <Home />
       <About />
