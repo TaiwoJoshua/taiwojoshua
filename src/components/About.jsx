@@ -1,6 +1,7 @@
 import React from 'react';
 import image from '../images/photo_2022-03-28_15-31-27.jpg';
 import MotionComponent from './MotionComponent';
+import pdf from "../images/pdf-icon.png";
 
 const About = () => {
   const Content = () => { 
@@ -37,6 +38,13 @@ const About = () => {
               page, you can see some of the many projects I have built, showcasing my capabilities in web design. Additionally, please check out my portfolio section below for further examples of my work.
             </p>
           </div>
+        </div>
+        <div className='cv-wrapper'>
+          <a href="/Taiwo Joshua's Criteria Vitae.pdf" target='_blank' rel='noreferrer'>
+            <img src={ pdf } alt="PDF File" width="25px" />
+            My Criteria Vitae
+          </a>
+          <a href="/Taiwo Joshua's Criteria Vitae.pdf" download={"Taiwo Joshua's Criteria Vitae.pdf"}><button>Download</button></a>
         </div>
       </>
     );

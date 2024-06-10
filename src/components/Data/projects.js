@@ -25,7 +25,7 @@ const projects = [
     },
     {
         title: "RUC Bible Study Attendance",
-        link: "https://rucbiblestudy.000webhostapp.com/",
+        // link: "https://rucbiblestudy.000webhostapp.com/",
         folder: "RUC-Bible-Study-Attendance",
         images: ["index.png", "login.png", "sign.png", "confirmsign.png", "successsign.png", "alreadysigned.png", "notfound.png", "nosign.png", "invalidsign.png", "options.png", "loading.png", "registermember.png", "addgen.png", "confirmgen.png", "update.png", "updateform.png", "registermember.png", "view.png", "viewinfo.png", "stats.png", "remove.png", "confirmremove.png", "prevatt.png"]
     },
@@ -37,14 +37,14 @@ const projects = [
     },
     {
         title: "RUNACES Dues",
-        link: "https://runacesdues.com/",
+        // link: "https://runacesdues.com/",
         folder: "RUNACES Dues",
         images: ["index.jpg", "found.jpg", "rdownload.jpg", "receipt.png", "incomplete.jpg", "notfound.jpg", "401a.jpg"]
         // images: ["index.jpg", "found.jpg", "rdownload.jpg", "receipt.png", "incomplete.jpg", "notfound.jpg", "401a.jpg", "admin.jpg", "wrongp.jpg", "successp.jpg", "signedin.jpg", "options.jpg", "add.jpg", "update.jpg", "upadate2.jpg", "remove.jpg", "confirmRemove.jpg", "wrongk.jpg", "correctk.jpg", "stats.jpg", "leveldownloada.jpg", "download.jpg", "record.png", "logout.jpg"]
     },
     {
         title: "RUNMESA Dues",
-        link: "https://runmesadues.com/",
+        // link: "https://runmesadues.com/",
         folder: "RUNMESA Dues",
         images: ["index.jpg", "found.jpg", "rdownload.jpg", "receipt.jpg", "found.jpg", "sent.jpg", "unable.jpg", "incomplete.jpg", "notfound.jpg", "401.jpg"]
         // images: ["index.jpg", "found.jpg", "rdownload.jpg", "receipt.jpg", "found.jpg", "sent.jpg", "unable.jpg", "incomplete.jpg", "notfound.jpg", "401.jpg", "admin.jpg", "wrongp.jpg", "successp.jpg", "options.jpg", "add.jpg", "update.jpg", "updater.jpg", "remove.jpg", "confirmremove.jpg", "wrongk.jpg", "correctk.jpg", "stats.jpg", "leveldownload.jpg", "download.jpg", "record.jpg", "logout.jpg", "dindex.jpg", "dstatus.jpg", "doptions.jpg", "1stCourse.jpg", "1stCourseStat.jpg", "2ndCourse.jpg", "2ndCourseStat.jpg", "dstats.jpg", "ddownload.jpg", "dlogout.jpg"]

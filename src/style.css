@@ -314,6 +314,32 @@ body, #root, .app{
     color: inherit;
     font-weight: bold;
 }
+.cv-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 -50px 0;
+}
+.cv-wrapper>a{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.cv-wrapper img{
+    width: 25px;
+    margin-right: 5px;
+}
+.cv-wrapper a:has(button){
+    text-decoration: none;
+}
+.cv-wrapper a button{
+    font-size: 0.8em;
+    margin: 0;
+    box-shadow: 0 0 3px rgb(0, 0, 0);
+}
+.cv_wrapper a button:hover{
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
 
 /* Portfolio Section */
 #portfolio{
@@ -440,7 +466,7 @@ body, #root, .app{
 .ver:hover .ver_wrapper{
     display: flex;
 }
-.ver_wrapper button{
+.ver_wrapper button, .cv-wrapper button{
     width: 80px;
     height: 30px;
     border-radius: 10px;
