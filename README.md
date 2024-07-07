@@ -1,10 +1,10 @@
-# Welcome to Taiwo Joshua's GitHub Repository
+# Welcome to Joshua Taiwo's GitHub Repository
 
 ![Header Image](./public/logo192.png)
 
 ## About Me
 
-Hello, I'm Taiwo Joshua, a passionate website developer. I specialize in creating modern, user-friendly websites and web applications that not only look great but also provide a smooth user experience. This GitHub repository serves as a showcase of my work and a hub for collaborating on web development projects.
+Hello, I'm Joshua Taiwo, a passionate website developer. I specialize in creating modern, user-friendly websites and web applications that not only look great but also provide a smooth user experience. This GitHub repository serves as a showcase of my work and a hub for collaborating on web development projects.
 
 Here's what you can expect from this repository:
 
@@ -13,7 +13,6 @@ Here's what you can expect from this repository:
 - Collaboration opportunities for potential projects or improvements.
 
 Feel free to explore my work and get in touch if you're interested in collaborating or if you have any questions.
-
 
 ## Technologies
 
