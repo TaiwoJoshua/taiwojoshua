@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../images/photo_2022-03-28_15-31-27.jpg";
+import image from "../images/Taiwo Joshua.jpg";
 import MotionComponent from "./MotionComponent";
 import pdf from "../images/pdf-icon.png";
 
