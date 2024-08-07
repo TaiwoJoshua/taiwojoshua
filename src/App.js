@@ -9,7 +9,7 @@ import Contact from "./components/Contact";
 import Services from "./components/Services";
 import Footer from "./components/Footer";
 import { FaBars, FaChevronDown, FaChevronUp } from "react-icons/fa6";
-import TawkToScript from "./components/TawkToScript";
+// import TawkToScript from "./components/TawkToScript";
 
 export default function App() {
   const timeoutRef = React.useRef(null);
@@ -115,7 +115,7 @@ export default function App() {
       <Services />
       <Contact />
       <Footer />
-      <TawkToScript />
+      {/* <TawkToScript /> */}
     </div>
   );
 }
