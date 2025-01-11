@@ -50,9 +50,6 @@ export default function App() {
         const prev = sections[prevIndex];
         const next = sections[nextIndex];
         setPrevNext({ prev, next });
-        console.log(current, prev, next);
-
-        // setMove(navoption);
       } else {
         navoption.classList.remove("active");
       }
