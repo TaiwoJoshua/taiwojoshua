@@ -26,6 +26,8 @@ I am proficient in a variety of web development technologies, including but not 
 - React
 - Node.js
 - Express.js
+- PHP
+- Laravel
 - Firebase
 - SQL and database management
 - Responsive web design
@@ -35,7 +37,8 @@ I am proficient in a variety of web development technologies, including but not 
 
 - Email: joshuataiwo07@gmail.com
 - LinkedIn: https://www.linkedin.com/in/taiwo-joshua-olamilekan-02b42520a/
-- Portfolio: https://taiwojoshua.netlify.app/
+- Portfolio: https://taiwojoshua.com.ng/
+- Alternative: https://taiwojoshua.netlify.app/
 - WhatsApp: +2348103182378
 
 Feel free to reach out to me if you'd like to collaborate, have questions about my projects, or need assistance with web development.
