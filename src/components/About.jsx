@@ -9,9 +9,9 @@ const About = () => {
       <>
         <h1 className="headings">ABOUT ME</h1>
         <div id="pic">
-          <img src={image} alt="Joshua Taiwo" />
+          <img src={image} alt="Taiwo Joshua" />
           <div id="intro">
-            <h2>Joshua Taiwo</h2>
+            <h2>Taiwo Joshua</h2>
             <p>
               I am a young, diligent, and aspiring web designer. Currently, I am
               a student at{" "}
@@ -69,7 +69,7 @@ const About = () => {
         </div>
         <div className="cv-wrapper">
           <a
-            href="/Joshua Taiwo's Criteria Vitae.pdf"
+            href="/Taiwo Joshua's Criteria Vitae.pdf"
             target="_blank"
             rel="noreferrer"
           >
@@ -77,8 +77,8 @@ const About = () => {
             My Criteria Vitae
           </a>
           <a
-            href="/Joshua Taiwo's Criteria Vitae.pdf"
-            download={"Joshua Taiwo's Criteria Vitae.pdf"}
+            href="/Taiwo Joshua's Criteria Vitae.pdf"
+            download={"Taiwo Joshua's Criteria Vitae.pdf"}
           >
             <button>Download</button>
           </a>

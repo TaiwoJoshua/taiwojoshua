@@ -28,10 +28,10 @@
   background-color: black;
   border: 0.5px solid rgb(242, 242, 242);
 }
-:root {
+/* :root {
   scrollbar-color: black white;
   scrollbar-width: thin;
-}
+} */
 html {
   scroll-behavior: smooth;
 }

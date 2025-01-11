@@ -8,7 +8,7 @@ export default function Home() {
         <div className="main">
           <div>
             <h1 className="headings">
-              I AM <br /> Joshua Taiwo
+              I AM <br /> Taiwo Joshua
             </h1>
             <h2 className="full">
               <ReactTyped
