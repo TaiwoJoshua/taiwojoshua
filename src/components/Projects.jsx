@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import data from "./Data/projects.json";
 import Fancybox from "./Fancybox";
+import ImageLoader from "./ImageLoader";
 
 export default function Projects() {
   const [projects, setProjects] = useState([]);
@@ -56,10 +57,16 @@ export default function Projects() {
                 className="project-card bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden card-hover"
               >
                 <div className="relative h-48 overflow-hidden">
+                  <ImageLoader />
+
                   <img
                     src={require(`../images/${project.folder}/${project.images[0]}`)}
                     alt={project.title}
                     title={project.title}
+                    loading="lazy"
+                    onLoad={(e) => {
+                      e.target.previousElementSibling.style.display = "none";
+                    }}
                     className="w-full h-full object-cover"
                   />
                 </div>
