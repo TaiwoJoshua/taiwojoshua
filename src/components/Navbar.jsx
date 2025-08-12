@@ -127,30 +127,35 @@ export default function Navbar() {
         <div className="px-2 pt-2 pb-3 space-y-1">
           <a
             href="#home"
+            onClick={() => setMNav(false)}
             className="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
           >
             Home
           </a>
           <a
             href="#about"
+            onClick={() => setMNav(false)}
             className="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
           >
             About
           </a>
           <a
             href="#skills"
+            onClick={() => setMNav(false)}
             className="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
           >
             Skills
           </a>
           <a
             href="#projects"
+            onClick={() => setMNav(false)}
             className="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
           >
             Projects
           </a>
           <a
             href="#contact"
+            onClick={() => setMNav(false)}
             className="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
           >
             Contact
