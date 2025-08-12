@@ -1,0 +1,281 @@
+[
+  {
+    "title": "RUC Training Unit",
+    "link": "https://ructrainingunit.com.ng/",
+    "folder": "RUC-Training-Unit",
+    "images": [
+      "index.png",
+      "1.png",
+      "2.png",
+      "3.png",
+      "4.png",
+      "5.png",
+      "6.png",
+      "7.png",
+      "8.png",
+      "9.png",
+      "10.png"
+    ],
+    "stack": ["ReactJS", "PHP", "MySQL"]
+  },
+  {
+    "title": "RCCG - Lily of the Valley",
+    "link": "https://rccg-lilyofthevalley.netlify.app/",
+    "folder": "RCCG Lily",
+    "images": [
+      "index.png",
+      "1.png",
+      "2.png",
+      "3.png",
+      "4.png",
+      "5.png",
+      "6.png",
+      "7.png",
+      "8.png",
+      "9.png",
+      "10.png",
+      "11.png",
+      "12.png",
+      "13.png"
+    ],
+    "stack": ["ReactJS", "Firebase"]
+  },
+  {
+    "title": "RUN Engineering Time-Table",
+    "link": "",
+    "folder": "Engineering Time-Table",
+    "images": [
+      "index.jpg",
+      "loading.png",
+      "notification.jpg",
+      "front.jpg",
+      "announce.png",
+      "table.png",
+      "course.png",
+      "picture edit.jpg",
+      "announcement edit.png",
+      "table edit.png",
+      "course edit.png"
+    ],
+    "stack": ["ReactJS", "PHP", "MySQL"]
+  },
+  {
+    "title": "TeeJay Gallery",
+    "link": "",
+    "folder": "TJ Gallery",
+    "images": [
+      "welcome.JPG",
+      "index.png",
+      "animal.png",
+      "food.png",
+      "buildings.png",
+      "business.png",
+      "cars.png",
+      "fashion.png",
+      "nature.png",
+      "sport.png",
+      "tech.png",
+      "wallpaper.png"
+    ],
+    "stack": ["HTML", "PHP", "MySQL"]
+  },
+  {
+    "title": "RUC Bible Study Attendance",
+    "link": "https://rucbiblestudy.000webhostapp.com/",
+    "folder": "RUC-Bible-Study-Attendance",
+    "images": [
+      "index.png",
+      "login.png",
+      "sign.png",
+      "confirmsign.png",
+      "successsign.png",
+      "alreadysigned.png",
+      "notfound.png",
+      "nosign.png",
+      "invalidsign.png",
+      "options.png",
+      "loading.png",
+      "registermember.png",
+      "addgen.png",
+      "confirmgen.png",
+      "update.png",
+      "updateform.png",
+      "registermember.png",
+      "view.png",
+      "viewinfo.png",
+      "stats.png",
+      "remove.png",
+      "confirmremove.png",
+      "prevatt.png"
+    ],
+    "stack": ["ReactJS", "Tailwind CSS", "NodeJS", "MySQL"]
+  },
+  {
+    "title": "Chapel Dues Record",
+    "link": "",
+    "folder": "Chapel Dues Record",
+    "images": [
+      "index.jpg",
+      "found.jpg",
+      "notfoud.jpg",
+      "admin.jpg",
+      "wrongp.jpg",
+      "successp.jpg",
+      "loading.png",
+      "add.jpg",
+      "remove.jpg",
+      "confirmremove.jpg",
+      "stats.jpg",
+      "download.jpg",
+      "record.png",
+      "logout.jpg",
+      "loggingout.png"
+    ],
+    "stack": ["HTML", "PHP"]
+  },
+  {
+    "title": "RUNACES Dues",
+    "link": "https://runacesdues.netlify.app/",
+    "folder": "RUNACES Dues",
+    "images": [
+      "index.jpg",
+      "found.jpg",
+      "rdownload.jpg",
+      "receipt.png",
+      "incomplete.jpg",
+      "notfound.jpg",
+      "401a.jpg",
+      "admin.jpg",
+      "wrongp.jpg",
+      "successp.jpg",
+      "signedin.jpg",
+      "options.jpg",
+      "add.jpg",
+      "update.jpg",
+      "upadate2.jpg",
+      "remove.jpg",
+      "confirmRemove.jpg",
+      "wrongk.jpg",
+      "correctk.jpg",
+      "stats.jpg",
+      "leveldownloada.jpg",
+      "download.jpg",
+      "record.png",
+      "logout.jpg"
+    ],
+    "stack": ["HTML", "PHP", "MySQL"]
+  },
+  {
+    "title": "Automatic Time-Table Generator",
+    "link": "",
+    "folder": "Automatic Time_Table Generator",
+    "images": [
+      "index.png",
+      "inputs.png",
+      "periods.png",
+      "loading.png",
+      "timetable.png"
+    ],
+    "stack": ["HTML", "JavaScript"]
+  },
+  {
+    "title": "To-Do List",
+    "link": "https://teejay-todolist.netlify.app/",
+    "folder": "ToDoList",
+    "images": [
+      "index.png",
+      "empty.png",
+      "add.png",
+      "created.png",
+      "checked.png",
+      "completed.png",
+      "darkMode.png",
+      "darkEmpty.png"
+    ],
+    "stack": ["ReactJS"]
+  },
+  {
+    "title": "Notes",
+    "link": "https://teejay-notes.netlify.app/",
+    "folder": "Notes",
+    "images": [
+      "index.png",
+      "empty.png",
+      "new note.png",
+      "text.png",
+      "preview.png"
+    ],
+    "stack": ["ReactJS"]
+  },
+  {
+    "title": "Quizzical",
+    "link": "https://teejayquizzical.netlify.app/",
+    "folder": "Quizzical",
+    "images": ["index.png", "second.png", "last.png"],
+    "stack": ["ReactJS"]
+  },
+  {
+    "title": "Tenzies",
+    "link": "https://teejaytenzies.netlify.app/",
+    "folder": "Tenzies",
+    "images": [
+      "index.png",
+      "selected.png",
+      "first roll.png",
+      "completed.png",
+      "new time.png"
+    ],
+    "stack": ["ReactJS"]
+  },
+  {
+    "title": "Guess the Number",
+    "link": "https://givethenumber.netlify.app/",
+    "folder": "Guess Number",
+    "images": [
+      "index.png",
+      "ready.png",
+      "input.png",
+      "empty.png",
+      "low.png",
+      "high.png",
+      "right.png",
+      "no.png"
+    ],
+    "stack": ["ReactJS"]
+  },
+  {
+    "title": "Guess the Name",
+    "link": "https://tjguessthename.netlify.app/",
+    "folder": "Guess The Name",
+    "images": [
+      "index.png",
+      "teejay.png",
+      "present.png",
+      "welcome.png",
+      "nplayers.png",
+      "nameplayers.png",
+      "player one right.png",
+      "player two right.png",
+      "taken.png",
+      "wrong.png",
+      "final.png",
+      "winner.png",
+      "game over.png"
+    ],
+    "stack": ["ReactJS"]
+  },
+  {
+    "title": "Units Converter",
+    "link": "https://tj-units-converter.netlify.app/",
+    "folder": "Units Converter",
+    "images": ["index.png", "weight.png", "calc.png", "swap.png", "delete.png"],
+    "stack": ["HTML", "JavaScript"]
+  },
+  {
+    "title": "Metaverse Blog",
+    "link": "https://article-project-taiwojoshua.netlify.app/",
+    "folder": "Article",
+    "images": ["top.png", "mid.png", "footer.png"],
+    "stack": ["HTML", "JavaScript"]
+  }
+]
