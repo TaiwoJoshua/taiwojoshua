@@ -1,5 +1,6 @@
 import React from "react";
 import image from "../images/Taiwo Joshua.jpg";
+import resume from "./Joshua Taiwo's Resume.pdf";
 
 const About = () => {
   return (
@@ -75,10 +76,7 @@ const About = () => {
               </div>
             </div>
             <div className="flex gap-4">
-              <a
-                href="/Taiwo Joshua's Resume.pdf"
-                download={"Taiwo Joshua's Resume.pdf"}
-              >
+              <a href={resume} download={"Taiwo Joshua's Resume.pdf"}>
                 <button
                   id="download-resume"
                   className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300 flex items-center"
