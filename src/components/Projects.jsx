@@ -74,9 +74,8 @@ export default function Projects() {
                   <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-2">
                     {project.title}
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-300 mb-4">
-                    Full-stack e-commerce solution with payment integration,
-                    user authentication, and admin dashboard.
+                  <p className="text-gray-600 dark:text-gray-300 mb-4 text-justify">
+                    {project.description}
                   </p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.stack.map((tech, index) => (
@@ -145,48 +144,6 @@ export default function Projects() {
                 </div>
               </div>
             ))}
-
-            <div className="project-card bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden card-hover">
-              <div className="relative h-48 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
-                  <div className="text-center text-white">
-                    <i className="fas fa-shopping-cart text-4xl mb-2"></i>
-                    <p className="text-sm opacity-75">Project Screenshot</p>
-                  </div>
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-2">
-                  E-Commerce Platform
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  Full-stack e-commerce solution with payment integration, user
-                  authentication, and admin dashboard.
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded text-xs">
-                    Laravel
-                  </span>
-                  <span className="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-2 py-1 rounded text-xs">
-                    MySQL
-                  </span>
-                  <span className="bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-2 py-1 rounded text-xs">
-                    Bootstrap
-                  </span>
-                </div>
-                <div className="flex gap-2">
-                  <button className="bg-blue-500 text-white px-3 py-2 rounded hover:bg-blue-600 transition duration-300 flex-1 text-sm">
-                    <i className="fas fa-eye mr-1"></i>Demo
-                  </button>
-                  <button className="bg-green-500 text-white px-3 py-2 rounded hover:bg-green-600 transition duration-300 flex-1 text-sm">
-                    <i className="fas fa-image mr-1"></i>Images
-                  </button>
-                  <button className="border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 px-3 py-2 rounded hover:bg-gray-50 dark:hover:bg-gray-700 transition duration-300">
-                    <i className="fab fa-github"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
           </div>
         </Fancybox>
 
