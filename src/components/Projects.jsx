@@ -1,34 +1,72 @@
 import React, { useEffect, useState } from "react";
-import data from "./Data/projects.json";
 import Fancybox from "./Fancybox";
 import ImageLoader from "./ImageLoader";
 
 export default function Projects() {
   const [projects, setProjects] = useState([]);
+  const [images, setImages] = useState({});
   const [limit, setLimit] = useState(6);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    setProjects(data.slice(0, limit));
-  }, [limit]);
+    fetch("/projects.json")
+      .then((res) => res.json())
+      .then((data) => setProjects(data))
+      .catch((err) => console.error(err));
+
+    fetch("/images.json")
+      .then((res) => res.json())
+      .then((data) => setImages(data))
+      .catch((err) => console.error(err));
+  }, []);
 
   function loadMore() {
     setLoading(true);
     setTimeout(() => {
       setLimit((old) =>
-        old < data.length && old + 3 < data.length ? old + 3 : data.length
+        old < projects.length && old + 3 < projects.length
+          ? old + 3
+          : projects.length
       );
       setLoading(false);
     }, 1500);
   }
 
-  const colors = [
-    "bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200",
-    "bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200",
-    "bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200",
-    "bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200",
-    "bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200",
-  ];
+  const colors = {
+    ReactJS: "bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200",
+    "Tailwind CSS":
+      "bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200",
+    Laravel:
+      "bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200",
+    MySQL:
+      "bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200",
+    Firebase:
+      "bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200",
+
+    NodeJS: "bg-lime-100 dark:bg-lime-900 text-lime-800 dark:text-lime-200",
+
+    Express: "bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300",
+
+    PHP: "bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200",
+
+    Mega: "bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200",
+
+    HTML: "bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200",
+
+    JavaScript:
+      "bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200",
+
+    CSS: "bg-sky-100 dark:bg-sky-900 text-sky-800 dark:text-sky-200",
+
+    Python: "bg-teal-100 dark:bg-teal-900 text-teal-800 dark:text-teal-200",
+
+    PostgreSQL: "bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300",
+
+    Docker: "bg-sky-100 dark:bg-sky-900 text-sky-800 dark:text-sky-200",
+
+    Git: "bg-red-100 dark:bg-red-900 text-red-700 dark:text-red-200",
+  };
+
   return (
     <section
       id="projects"
@@ -51,7 +89,7 @@ export default function Projects() {
             id="projects-container"
             className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
           >
-            {projects.map((project, index) => (
+            {projects.slice(0, limit).map((project, index) => (
               <div
                 key={`${project.title}_${project.folder}_${index}`}
                 className="project-card bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden card-hover"
@@ -60,7 +98,9 @@ export default function Projects() {
                   <ImageLoader />
 
                   <img
-                    src={require(`../images/${project.folder}/${project.images[0]}`)}
+                    src={`/images/${project.folder}/${
+                      images[project.folder][0]
+                    }`}
                     alt={project.title}
                     title={project.title}
                     loading="lazy"
@@ -81,47 +121,41 @@ export default function Projects() {
                     {project.stack.map((tech, index) => (
                       <span
                         key={`${project.title}_${tech}_${index}`}
-                        className={`${
-                          colors[index % colors.length]
-                        } px-2 py-1 rounded text-xs`}
+                        className={`${colors[tech]} px-2 py-1 rounded text-xs`}
                       >
                         {tech}
                       </span>
                     ))}
                   </div>
-                  <div className="flex gap-2">
-                    {project.link ? (
-                      <button className="bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-300 flex-1 text-sm">
-                        <a
-                          href={project.link}
-                          rel="noreferrer"
-                          target="_blank"
-                          className="flex items-center justify-center w-full h-full px-3 py-2"
-                        >
-                          <i className="fas fa-eye mr-1"></i>Visit
-                        </a>
-                      </button>
-                    ) : (
-                      <button
-                        className="bg-gray-400 text-white px-3 py-2 rounded cursor-not-allowed flex-1 text-sm"
-                        disabled
-                      >
-                        <i className="fas fa-eye mr-1"></i>Visit N/A
-                      </button>
-                    )}
-                    <button className="bg-green-500 text-white px-3 py-2 rounded hover:bg-green-600 transition duration-300 flex-1 text-sm">
+                  <div className="grid grid-cols-3 gap-2">
+                    <button
+                      className="bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-300 text-sm disabled:bg-gray-400 disabled:text-white disabled:cursor-not-allowed"
+                      disabled={!project.link}
+                    >
                       <a
-                        key={`${project.title}_${project.images[0]}`}
-                        href={require(`../images/${project.folder}/${project.images[0]}`)}
+                        href={project.link}
+                        rel="noreferrer"
+                        target="_blank"
+                        className="flex items-center justify-center w-full h-full px-3 py-2"
+                      >
+                        <i className="fas fa-eye mr-1"></i>
+                      </a>
+                    </button>
+                    <button className="bg-green-500 text-white px-3 py-2 rounded hover:bg-green-600 transition duration-300 text-sm">
+                      <a
+                        key={`${project.title}_${images[project.folder][0]}`}
+                        href={`/images/${project.folder}/${
+                          images[project.folder][0]
+                        }`}
                         data-fancybox={project.title}
                         className="flex items-center justify-center w-full h-full px-3 py-2"
                       >
-                        <i className="fas fa-image mr-1"></i>Images
+                        <i className="fas fa-image mr-1"></i>
                       </a>
-                      {project.images.slice(1).map((image) => (
+                      {images[project.folder].slice(1).map((image) => (
                         <a
                           key={`${project.title}_${image}`}
-                          href={require(`../images/${project.folder}/${image}`)}
+                          href={`../images/${project.folder}/${image}`}
                           data-fancybox={project.title}
                         >
                           {" "}
@@ -148,7 +182,7 @@ export default function Projects() {
         </Fancybox>
 
         <div className="text-center mt-12">
-          {limit < data.length && (
+          {limit < projects.length && (
             <button
               id="load-more-btn"
               className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-3 rounded-full font-semibold hover:from-blue-600 hover:to-purple-700 transition duration-300 transform hover:scale-105 disabled:from-gray-500 disabled:to-gray-500 disabled:cursor-not-allowed"
@@ -185,7 +219,7 @@ export default function Projects() {
             </button>
           )}
           <p className="text-gray-500 dark:text-gray-400 text-sm mt-2">
-            Showing {limit} of {data.length}+ projects
+            Showing {limit} of {projects.length}+ projects
           </p>
         </div>
 
