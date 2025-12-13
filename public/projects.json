@@ -5,15 +5,15 @@
     "folder": "ReservdNG",
     "description": "ReservdNG: Your trusted platform for booking premium experiences across Nigeria. Your seat is guaranteed.",
     "stack": ["ReactJS", "Tailwind CSS", "Laravel", "MySQL"],
-    "github": "https://github.com/TaiwoJoshua/reservdng.git"
+    "github": false
   },
   {
     "title": "SAOTEMOT",
     "link": null,
     "folder": "Saotemot",
-    "description": "Saotemot is an automated stock management system that tracks inventory, handles bulk purchases, and generates reports, helping businesses maintain accurate, up-to-date stock efficiently.",
+    "description": "Saotemot is an automated stock management system that tracks inventory, handles bulk purchases, and generates reports.",
     "stack": ["ReactJS", "Tailwind CSS", "Laravel", "MySQL"],
-    "github": "https://github.com/TaiwoJoshua/saotemot-stock-laravel"
+    "github": false
   },
   {
     "title": "RUC Training Unit",
@@ -21,14 +21,15 @@
     "folder": "RUC-Training-Unit",
     "description": "A platform to enroll in a training class with Redeemer's University Chapel of Power Training Unit.",
     "stack": ["ReactJS", "PHP", "MySQL"],
-    "github": "https://github.com/TaiwoJoshua/ruc-training-unit.git"
+    "github": false
   },
   {
     "title": "RUNFENGHUB",
     "link": "https://runfenghub.netlify.app/",
     "folder": "RUNFENGHUB",
     "description": "A dedicated platform where students can easily access and download past questions and academic resources for the Faculty of Engineering at Redeemer's University.",
-    "stack": ["ReactJS", "NodeJS", "Express", "MySQL"]
+    "stack": ["ReactJS", "NodeJS", "Express", "MySQL"],
+    "github": false
   },
   {
     "title": "RUC Bible Study Attendance",
@@ -36,7 +37,7 @@
     "folder": "RUC-Bible-Study-Attendance",
     "description": "A dedicated platform for Redeemer's University Chapel of Power Bible Study Department's Attendance",
     "stack": ["ReactJS", "Tailwind CSS", "NodeJS", "Express", "MySQL"],
-    "github": "https://github.com/TaiwoJoshua/rucbiblestudy.git"
+    "github": false
   },
   {
     "title": "Somaderm",
@@ -51,7 +52,8 @@
     "link": "https://rccg-lilyofthevalley.netlify.app/",
     "folder": "RCCG Lily",
     "stack": ["ReactJS", "Firebase"],
-    "description": "A dedicated platform to discover Christ, Faith, and Love at RCCG Lily of the Valley - Join Us Today!"
+    "description": "A dedicated platform to discover Christ, Faith, and Love at RCCG Lily of the Valley - Join Us Today!",
+    "github": false
   },
   {
     "title": "RUNACES Dues",
@@ -59,14 +61,15 @@
     "folder": "RUNACES Dues",
     "description": "A platform to effortlessly track your RUNACES Departmental Dues, verify payment status, and instantly obtain receipts on our user-friendly website",
     "stack": ["ReactJS", "Firebase"],
-    "github": "https://github.com/TaiwoJoshua/runacesdues.git"
+    "github": false
   },
   {
     "title": "Automatic Time-Table Generator",
     "link": null,
     "folder": "Automatic Time_Table Generator",
     "stack": ["HTML", "JavaScript"],
-    "description": "An automatic timetable generator that builds conflict-free schedules in seconds, balancing constraints and preferences with smart optimization."
+    "description": "An automatic timetable generator that builds conflict-free schedules in seconds, balancing constraints and preferences with smart optimization.",
+    "github": false
   },
   {
     "title": "To-Do List",
@@ -81,55 +84,63 @@
     "link": "https://teejayquizzical.netlify.app/",
     "folder": "Quizzical",
     "stack": ["ReactJS"],
-    "description": "Quizzical is a dynamic quiz app built with React.js, offering engaging questions, instant feedback, and a fun way to test your knowledge."
+    "description": "Quizzical is a dynamic quiz app built with React.js, offering engaging questions, instant feedback, and a fun way to test your knowledge.",
+    "github": "https://github.com/TaiwoJoshua/teejay-quizzical"
   },
   {
     "title": "Tenzies",
     "link": "https://teejaytenzies.netlify.app/",
     "folder": "Tenzies",
     "stack": ["ReactJS"],
-    "description": "Tenzies is a fast-paced dice game built with React.js, where players race to match all dice to the same number while tracking rolls and time."
+    "description": "Tenzies is a fast-paced dice game built with React.js, where players race to match all dice to the same number while tracking rolls and time.",
+    "github": "https://github.com/TaiwoJoshua/tenzies"
   },
   {
     "title": "Notes",
     "link": "https://teejay-notes.netlify.app/",
     "folder": "Notes",
     "stack": ["ReactJS"],
-    "description": "A fast and responsive notes app built with React.js, designed for quick note-taking, easy organization, and seamless editing."
+    "description": "A fast and responsive notes app built with React.js, designed for quick note-taking, easy organization, and seamless editing.",
+    "github": "https://github.com/TaiwoJoshua/notes"
   },
   {
     "title": "TeeJay Gallery",
     "link": null,
     "folder": "TJ Gallery",
     "stack": ["HTML", "JavaScript", "PHP", "MySQL"],
-    "description": "A clean and responsive image gallery built with HTML, CSS, and JavaScript, allowing users to browse and view photos in an organized, visually appealing layout."
+    "description": "A clean and responsive image gallery built with HTML, CSS, and JavaScript, allowing users to browse and view photos in an organized, visually appealing layout.",
+    "github": false
   },
   {
     "title": "Guess the Number",
     "link": "https://givethenumber.netlify.app/",
     "folder": "Guess Number",
     "stack": ["ReactJS"],
-    "description": "A simple yet fun ‘Guess the Number’ game built with ReactJS, where players try to find the secret number with hints after each guess."
+    "description": "A simple yet fun ‘Guess the Number’ game built with ReactJS, where players try to find the secret number with hints after each guess.",
+    "github": "https://github.com/TaiwoJoshua/Guessing-Game"
   },
   {
     "title": "Guess the Name",
     "link": "https://tjguessthename.netlify.app/",
     "folder": "Guess The Name",
     "stack": ["ReactJS"],
-    "description": "Guess the Name is a word-guessing game where players uncover the hidden name letter by letter, testing their vocabulary and deduction skills."
+    "description": "Guess the Name is a word-guessing game where players uncover the hidden name letter by letter, testing their vocabulary and deduction skills.",
+    "github": "https://github.com/TaiwoJoshua/Guess-the-Name"
   },
   {
     "title": "Units Converter",
     "link": "https://tj-units-converter.netlify.app/",
     "folder": "Units Converter",
     "stack": ["HTML", "JavaScript"],
-    "description": "A lightweight unit converter built with HTML and JavaScript, letting you quickly switch between common measurements with instant, accurate results."
+    "description": "A lightweight unit converter built with HTML and JavaScript, letting you quickly switch between common measurements with instant, accurate results.",
+    "github": "https://github.com/TaiwoJoshua/units_converter"
   },
   {
     "title": "Metaverse Blog",
     "link": "https://article-project-taiwojoshua.netlify.app/",
     "folder": "Article",
     "stack": ["HTML", "JavaScript"],
-    "description": "A simple blog page designed using HTML and JavaScript"
+    "description": "A simple blog page designed using HTML and JavaScript",
+    "github": false
   }
 ]

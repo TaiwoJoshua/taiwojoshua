@@ -7,7 +7,12 @@ const proj = {};
 function getFiles(folderPath) {
   return fs
     .readdirSync(folderPath)
-    .filter((f) => /\.(png|jpe?g|gif|webp)$/i.test(f));
+    .filter((f) => /\.(png|jpe?g|gif|webp)$/i.test(f))
+    .sort((a, b) => {
+      const numA = parseFloat(a.match(/\d+/)[0], 10);
+      const numB = parseFloat(b.match(/\d+/)[0], 10);
+      return numA - numB;
+    });
 }
 
 function renameFiles(files, folderPath, getNewNameFn) {
@@ -38,8 +43,8 @@ projects.forEach((project) => {
   const tmpFiles = getFiles(folderPath)
     .filter((f) => f.startsWith("tmp_"))
     .sort((a, b) => {
-      const numA = parseInt(a.split("_")[1]);
-      const numB = parseInt(b.split("_")[1]);
+      const numA = parseFloat(a.split("_")[1]);
+      const numB = parseFloat(b.split("_")[1]);
       return numA - numB;
     });
 
@@ -47,8 +52,8 @@ projects.forEach((project) => {
 
   // 4️⃣ FINAL SORTED LIST
   const finalImages = getFiles(folderPath).sort((a, b) => {
-    const numA = parseInt(a.match(/\d+/)[0], 10);
-    const numB = parseInt(b.match(/\d+/)[0], 10);
+    const numA = parseFloat(a.match(/\d+/)[0], 10);
+    const numB = parseFloat(b.match(/\d+/)[0], 10);
     return numA - numB;
   });
 

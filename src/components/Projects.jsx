@@ -1,12 +1,25 @@
 import React, { useEffect, useState } from "react";
 import Fancybox from "./Fancybox";
 import ImageLoader from "./ImageLoader";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function Projects() {
   const [projects, setProjects] = useState([]);
   const [images, setImages] = useState({});
   const [limit, setLimit] = useState(6);
   const [loading, setLoading] = useState(false);
+
+  const settings = {
+    // dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: true,
+  };
 
   useEffect(() => {
     fetch("/projects.json")
@@ -94,21 +107,28 @@ export default function Projects() {
                 key={`${project.title}_${project.folder}_${index}`}
                 className="project-card bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden card-hover"
               >
-                <div className="relative h-48 overflow-hidden">
-                  <ImageLoader />
-
-                  <img
-                    src={`/images/${project.folder}/${
-                      images[project.folder][0]
-                    }`}
-                    alt={project.title}
-                    title={project.title}
-                    loading="lazy"
-                    onLoad={(e) => {
-                      e.target.previousElementSibling.style.display = "none";
-                    }}
-                    className="w-full h-full object-cover"
-                  />
+                <div className="h-48 w-full overflow-hidden slider-container">
+                  <Slider {...settings} arrows={false}>
+                    {images[project.folder].map((image) => (
+                      <div
+                        className="h-full w-full relative"
+                        key={`${project.title}_${image}`}
+                      >
+                        <ImageLoader />
+                        <img
+                          src={`/images/${project.folder}/${image}`}
+                          alt={project.title}
+                          title={project.title}
+                          loading="lazy"
+                          onLoad={(e) => {
+                            e.target.previousElementSibling.style.display =
+                              "none";
+                          }}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    ))}
+                  </Slider>
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-2">
@@ -127,21 +147,20 @@ export default function Projects() {
                       </span>
                     ))}
                   </div>
-                  <div className="grid grid-cols-3 gap-2">
-                    <button
-                      className="bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-300 text-sm disabled:bg-gray-400 disabled:text-white disabled:cursor-not-allowed"
-                      disabled={!project.link}
-                    >
-                      <a
-                        href={project.link}
-                        rel="noreferrer"
-                        target="_blank"
-                        className="flex items-center justify-center w-full h-full px-3 py-2"
-                      >
-                        <i className="fas fa-eye mr-1"></i>
-                      </a>
-                    </button>
-                    <button className="bg-green-500 text-white px-3 py-2 rounded hover:bg-green-600 transition duration-300 text-sm">
+                  <div className="flex gap-2">
+                    {project.link && (
+                      <button className="w-full bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-300 text-sm disabled:bg-gray-400 disabled:text-white disabled:cursor-not-allowed">
+                        <a
+                          href={project.link}
+                          rel="noreferrer"
+                          target="_blank"
+                          className="flex items-center justify-center w-full h-full px-3 py-2"
+                        >
+                          <i className="fas fa-eye mr-1"></i>
+                        </a>
+                      </button>
+                    )}
+                    <button className="w-full bg-green-500 text-white px-3 py-2 rounded hover:bg-green-600 transition duration-300 text-sm">
                       <a
                         key={`${project.title}_${images[project.folder][0]}`}
                         href={`/images/${project.folder}/${
@@ -155,7 +174,7 @@ export default function Projects() {
                       {images[project.folder].slice(1).map((image) => (
                         <a
                           key={`${project.title}_${image}`}
-                          href={`../images/${project.folder}/${image}`}
+                          href={`/images/${project.folder}/${image}`}
                           data-fancybox={project.title}
                         >
                           {" "}
@@ -163,7 +182,7 @@ export default function Projects() {
                       ))}
                     </button>
                     {project.github && (
-                      <button className="border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 px-3 py-2 rounded hover:bg-gray-50 dark:hover:bg-gray-700 transition duration-300">
+                      <button className="w-full border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 px-3 py-2 rounded hover:bg-gray-50 dark:hover:bg-gray-700 transition duration-300">
                         <a
                           href={project.github}
                           rel="noreferrer"
